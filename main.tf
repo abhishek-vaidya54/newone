@@ -111,7 +111,7 @@ resource "google_compute_router" "cloud_router_vpn" {
 resource "google_compute_ha_vpn_gateway" "target_gateway" {
 
 
- provider = "google-beta"
+ provider = "google"
 
 
  name     = "aws-gcp-gateway"
@@ -137,7 +137,7 @@ resource "google_compute_ha_vpn_gateway" "target_gateway" {
 resource "google_compute_external_vpn_gateway" "aws_gateway_qa" {
 
 
- provider        = "google-beta"
+ provider        = "google"
 
 
  name            = "sat-aws-gateway-qa"
@@ -216,7 +216,7 @@ interface {
 resource "google_compute_vpn_tunnel" "tunnel1" {
 
 
- provider                        = "google-beta"
+ provider                        = "google"
 
 
  name                            = "sat-vpn-tunnel-1"
@@ -260,7 +260,7 @@ resource "google_compute_vpn_tunnel" "tunnel1" {
 resource "google_compute_vpn_tunnel" "tunnel2" {
 
 
- provider                        = "google-beta"
+ provider                        = "google"
 
 
  project                         = "sat-host-nonprod"
@@ -304,7 +304,7 @@ resource "google_compute_vpn_tunnel" "tunnel2" {
 resource "google_compute_vpn_tunnel" "tunnel3" {
 
 
- provider                        = "google-beta"
+ provider                        = "google"
 
 
  project                         = "sat-host-nonprod"
@@ -348,7 +348,7 @@ resource "google_compute_vpn_tunnel" "tunnel3" {
 resource "google_compute_vpn_tunnel" "tunnel4" {
 
 
- provider                        = "google-beta"
+ provider                        = "google"
 
 
  project                         = "sat-host-nonprod"
